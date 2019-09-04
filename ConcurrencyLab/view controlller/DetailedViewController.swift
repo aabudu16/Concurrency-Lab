@@ -18,11 +18,9 @@ class DetailedViewController: UIViewController {
     
     var detailedCountryVC:Countries!
     
-    var currency = [Rates](){
+    var currency:Rates!{
         didSet{
-            DispatchQueue.main.async {
-                
-            }
+            setCorrectCurrency()
         }
     }
     
@@ -46,20 +44,27 @@ class DetailedViewController: UIViewController {
             case .failure(let currancyError):
                 print("Cant recieve data \(currancyError)")
             case .success(let currency):
-                self.currency = currency
+                DispatchQueue.main.async {
+                    self.currency = currency
+                }
             }
         }
     }
     
-    func correctCurrencyRateInUSD(){
-        
-//        for rate in currency{
-//            switch rate{
-//            case "USD":
-//                rate.USD
-//            }
-//        }
-//    }
-    
-}
+    func setCorrectCurrency(){
+        switch detailedCountryVC.currencies[0].code{
+        case "USD":
+            dollarValue.text = "\(currency.USD)"
+        case "TZS":
+            dollarValue.text = "\(currency.TZS)"
+        case "AED":
+            dollarValue.text = "\(currency.AED)"
+        case "GBP":
+            dollarValue.text = "\(currency.GBP)"
+        case "MXN":
+            dollarValue.text = "\(currency.MXN)"
+        default:
+            dollarValue.text = "\(currency.USD)"
+        }
+    }
 }

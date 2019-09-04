@@ -9,7 +9,7 @@
 import UIKit
 
 struct CurrencyRate:Codable{
-    let rates:[Rates]
+    let rates:Rates
 }
 
 struct Rates:Codable{

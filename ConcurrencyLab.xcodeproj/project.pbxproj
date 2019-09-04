@@ -16,12 +16,10 @@
 		85EBCF48231EECA100DD5A5F /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF47231EECA100DD5A5F /* DetailedViewController.swift */; };
 		85EBCF4A231EECC900DD5A5F /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF49231EECC900DD5A5F /* CountryTableViewCell.swift */; };
 		85EBCF4D231EECFC00DD5A5F /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF4C231EECFC00DD5A5F /* CountryModel.swift */; };
-		85EBCF50231EED3100DD5A5F /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF4F231EED3100DD5A5F /* WeatherModel.swift */; };
 		85EBCF52231EED4700DD5A5F /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF51231EED4700DD5A5F /* CurrencyModel.swift */; };
 		85EBCF54231EED8700DD5A5F /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF53231EED8700DD5A5F /* CountryAPIClient.swift */; };
 		85EBCF57231EFFBA00DD5A5F /* CurrencyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */; };
 		85EBCF59231F009700DD5A5F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF58231F009700DD5A5F /* ErrorHandler.swift */; };
-		85EBCF5B231F019900DD5A5F /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */; };
 		85EBCF5D231FF33E00DD5A5F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF5C231FF33E00DD5A5F /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,12 +47,10 @@
 		85EBCF47231EECA100DD5A5F /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		85EBCF49231EECC900DD5A5F /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		85EBCF4C231EECFC00DD5A5F /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
-		85EBCF4F231EED3100DD5A5F /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		85EBCF51231EED4700DD5A5F /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		85EBCF53231EED8700DD5A5F /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
 		85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPIClient.swift; sourceTree = "<group>"; };
 		85EBCF58231F009700DD5A5F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 		85EBCF5C231FF33E00DD5A5F /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				85EBCF4C231EECFC00DD5A5F /* CountryModel.swift */,
-				85EBCF4F231EED3100DD5A5F /* WeatherModel.swift */,
 				85EBCF51231EED4700DD5A5F /* CurrencyModel.swift */,
 			);
 			path = "Model Files";
@@ -153,7 +148,6 @@
 			children = (
 				85EBCF53231EED8700DD5A5F /* CountryAPIClient.swift */,
 				85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */,
-				85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -266,9 +260,7 @@
 				85EBCF29231EEB1A00DD5A5F /* CountryViewController.swift in Sources */,
 				85EBCF27231EEB1A00DD5A5F /* AppDelegate.swift in Sources */,
 				85EBCF48231EECA100DD5A5F /* DetailedViewController.swift in Sources */,
-				85EBCF50231EED3100DD5A5F /* WeatherModel.swift in Sources */,
 				85EBCF59231F009700DD5A5F /* ErrorHandler.swift in Sources */,
-				85EBCF5B231F019900DD5A5F /* WeatherAPIClient.swift in Sources */,
 				85EBCF54231EED8700DD5A5F /* CountryAPIClient.swift in Sources */,
 				85EBCF4D231EECFC00DD5A5F /* CountryModel.swift in Sources */,
 			);

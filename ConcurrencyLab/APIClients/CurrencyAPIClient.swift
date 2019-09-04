@@ -13,7 +13,7 @@ struct CurrencyAPIClient{
     static let shared = CurrencyAPIClient()
     let currencyURL = "http://data.fixer.io/api/latest?access_key=a17aef5ece92cf36d9c5963f7f4babf1&format=1"
     
-    func fetchData(complition: @escaping (Result<[Rates],ErrorHandler>)->()){
+    func fetchData(complition: @escaping (Result<Rates,ErrorHandler>)->()){
         
         guard let url = URL(string: currencyURL) else { complition(.failure(.canNotConvertURL))
             return}
@@ -27,9 +27,9 @@ struct CurrencyAPIClient{
                 return}
             
             do{
-                let responseData = try JSONDecoder().decode([Rates].self, from: retrievedData)
-                complition(.success(responseData))
-            }catch{
+                let responseData = try JSONDecoder().decode(CurrencyRate.self, from: retrievedData)
+                complition(.success(responseData.rates))
+            }catch {
                 complition(.failure(.noDataAvailable))
             }
             
