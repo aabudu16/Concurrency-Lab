@@ -17,13 +17,7 @@ class CountryViewController: UIViewController {
             }
         }
     }
-    var currency = [Rates](){
-        didSet{
-            DispatchQueue.main.async {
-                self.countryTableView.reloadData()
-            }
-        }
-    }
+ 
     @IBOutlet var countryTableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
@@ -55,6 +49,9 @@ class CountryViewController: UIViewController {
         countryTableView.delegate = self
         countryTableView.dataSource = self
         searchBar.delegate = self
+        navigationItem.title = "COUNTRIES"
+        navigationController?.navigationBar.barTintColor = UIColor().getCustomBlueColor()
+        
         
     }
     func fetchCountryData(){
@@ -65,17 +62,6 @@ class CountryViewController: UIViewController {
                 print("cant get data \(countryError)")
             case .success(let country):
                 self.country = country
-            }
-        }
-    }
-    
-    func fetchCurrancyData(){
-        CurrencyAPIClient.shared.fetchData { (result) in
-            switch result{
-            case .failure(let currancyError):
-                print("Cant recieve data \(currancyError)")
-            case .success(let currency):
-                self.currency = currency
             }
         }
     }

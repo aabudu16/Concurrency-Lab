@@ -22,6 +22,7 @@
 		85EBCF57231EFFBA00DD5A5F /* CurrencyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */; };
 		85EBCF59231F009700DD5A5F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF58231F009700DD5A5F /* ErrorHandler.swift */; };
 		85EBCF5B231F019900DD5A5F /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */; };
+		85EBCF5D231FF33E00DD5A5F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EBCF5C231FF33E00DD5A5F /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPIClient.swift; sourceTree = "<group>"; };
 		85EBCF58231F009700DD5A5F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		85EBCF5C231FF33E00DD5A5F /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,8 @@
 				85EBCF2D231EEB1B00DD5A5F /* Assets.xcassets */,
 				85EBCF4E231EED0B00DD5A5F /* Model Files */,
 				85EBCF2F231EEB1B00DD5A5F /* LaunchScreen.storyboard */,
+				85EBCF5C231FF33E00DD5A5F /* UIColor-Extension.swift */,
+				85EBCF58231F009700DD5A5F /* ErrorHandler.swift */,
 				85EBCF55231EEDAE00DD5A5F /* APIClients */,
 				85EBCF32231EEB1B00DD5A5F /* Info.plist */,
 			);
@@ -149,7 +153,6 @@
 			children = (
 				85EBCF53231EED8700DD5A5F /* CountryAPIClient.swift */,
 				85EBCF56231EFFBA00DD5A5F /* CurrencyAPIClient.swift */,
-				85EBCF58231F009700DD5A5F /* ErrorHandler.swift */,
 				85EBCF5A231F019900DD5A5F /* WeatherAPIClient.swift */,
 			);
 			path = APIClients;
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EBCF52231EED4700DD5A5F /* CurrencyModel.swift in Sources */,
+				85EBCF5D231FF33E00DD5A5F /* UIColor-Extension.swift in Sources */,
 				85EBCF4A231EECC900DD5A5F /* CountryTableViewCell.swift in Sources */,
 				85EBCF57231EFFBA00DD5A5F /* CurrencyAPIClient.swift in Sources */,
 				85EBCF29231EEB1A00DD5A5F /* CountryViewController.swift in Sources */,
