@@ -117,7 +117,7 @@ extension CountryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailedCountryVC = storyboard?.instantiateViewController(withIdentifier: "CountryDVC") as! DetailedViewController
         
-        let info = country[indexPath.row]
+        let info = countrySearchResult[indexPath.row]
         
         detailedCountryVC.detailedCountryVC = info
         
